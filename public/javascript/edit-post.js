@@ -1,6 +1,6 @@
 async function editFormHandler(event) {
     event.preventDefault();
-    await fetch(`/api/posts/$id`, {
+    await fetch(`/api/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             title
